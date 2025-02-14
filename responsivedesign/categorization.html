@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorization</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            width: 95%;
+            margin: auto;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .a, .c, .d, .e {
+            border: 1.5px solid pink;
+            border-radius: 10px;
+            padding: 2%;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 4%;
+            }
+    
+        @media (min-width: 1024px) {
+            .a, .c, .d, .e {
+            border: 1.5px solid pink;
+            border-radius: 15px;
+            padding: 3%;
+            font-size: 1.1em;
+            text-align: center;
+            }
+
+            .wrapper{
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 40% 60%;
+                gap: 3%;
+                grid-template-areas: 
+                "a a a"
+                "c d e";
+            }
+
+            .a { grid-area: a;}
+            .c { grid-area: c;}
+            .d { grid-area: d;}
+            .e { grid-area: e;}
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <h1>Categorization of Olive Oil</h1>
+    </header>
+
+    <main>  
+        <article>
+            <div class="wrapper">
+                <div class="a">Olive oils are extracted from olive fruits. However, they have varied tastes and nutritional content based on their quality and the amount of processing they experience.</div>
+
+                <div class="c"><strong>Extra virgin olive oil (EVOO)</strong>
+                    <p>EVOO is considered the healthiest kind of olive oil, as it undergoes the least processing procedures. It is obtained from the first cold pressing of olives and thus contains more health-promoting nutrients and fewer chemicals. </p>
+                </div>
+                <div class="d"><strong>Virgin olive oil (VOO)</strong>
+                    <p>VOO is also derived using the cold mechanical method, as opposed to heating or chemical solvent extraction, with a higher acidity level of up to 2%. However, it is inferior in purity and flavor complexity compared to EVOO.</p>
+                </div>
+                <div class="e"><strong>Refined olive oil (ROO)</strong>
+                    <p>ROO is the virgin oil that has been refined to remove impurities and neutralize its flavor, which results in a low aroma, milder taste, and lighter color. Nevertheless, it may also lead to the loss of some antioxidants and overall nutritional value.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>Go back to <a href="index.html">Home Page</a></p>
+        <p>Go to next page: <a href="benefits.html">Benefits</a></p>
+    </footer>
+    
+  </body>
+</html>

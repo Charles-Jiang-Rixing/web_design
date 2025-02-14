@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Benefits</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> 
+        body {
+            width: 95%;
+            margin: auto;
+        }
+
+        article {
+            border: 1.5px dashed pink;
+            padding: 3%;
+            margin-bottom: 3%;
+            border-radius: 10px;
+            font-size: 1.1em;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        @media (min-width: 1024px) {
+            article {
+                border: none;
+                display: flex;
+                flex-direction: row;
+                width: 95%;
+                align-items: center;
+                margin-bottom: 0;
+                padding: 0;
+                font-size: 1em;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #container1,  #container2, #container3 {
+                font-size: 1.1em;
+                border: 1.5px dashed pink;
+                border-radius: 10px;
+                padding: 3%;
+                margin-bottom: 3%;
+            }
+
+            img {
+                margin-left: 3%;
+            }
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <h1>Health Benefits of Olive Oil</h1>
+    </header>
+
+    <main>
+        <article>
+                <div id="container1"> 
+                    <p><strong>1. Heart Disease</strong></p>
+                    <p>Substantial evidence indicates that olive oil protects against heart disease and stroke and enhances heart health, which can be explained by less inflammation, lower blood pressure, and reduced low-density lipoprotein oxidation.</p>
+                </div>
+                <img src="images/heart-480.jpg" alt="picture of a heart" width="150" height="150" srcset="images/heart-960.jpg 960w, images/heart-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+        </article>
+
+        <article>
+                <div id="container2">
+                    <p><strong>2. Brain Function</strong></p>
+                    <p>Olive oil can preserve brain function by improving oxidative stress, which is associated with cognitive disorders such as Alzheimer’s disease. Some Mediterranean diet studies have revealed that habitual consumption of olive oil reduces the risk of dementia and cognitive impairment.</p>
+                </div>
+                <img src="images/brain-480.jpg" alt="picture of a brain" width="150" height="150" srcset="images/brain-960.jpg 960w, images/brain-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+        </article>
+
+        <article>
+                <div id="container3">
+                    <p><strong>3. Cancer</strong></p>
+                    <p>One significant factor for cancer is free radicals, while antioxidants in olive oil can effectively reduce the oxidative damage they cause. Therefore, olive oil has been shown to slow the growth and spread of cancer cells, including breast and digestive cancer.</p>
+                </div>
+                <img src="images/cancer-480.jpg" alt="picture of cancer" width="150" height="150" srcset="images/cancer-960.jpg 960w, images/cancer-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>Go back to <a href="index.html">Home Page</a></p>
+        <p>Go to next page: <a href="use.html">Use Beyond Cooking</a></p>
+    </footer>
+    
+  </body>
+</html>

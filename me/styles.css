@@ -1,0 +1,142 @@
+h1,h2,h3{
+    font-family: serif, Georgia;
+    font-size: 1.5em;
+    color: black;
+}
+
+.container{
+    margin-left: 25px;
+}
+
+.title{
+    font-size: 2em;
+}
+
+p{
+    font-family: Georgia, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+a:link, a:visited{
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: orange;
+    background-color: #FFFFE0;
+    text-decoration: underline;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(187, 208, 216);
+    background-image: url('photos/nyulogo.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+}
+
+#images{
+    display: flex;
+    flex-direction: row;
+    border: 2px dotted orange;
+    justify-content: space-evenly;
+    width: 55%;
+    padding: 5px;
+}
+
+#aboutme{
+    display: flex;
+    flex-direction: row;
+}
+
+#education{
+    width: 25%;
+    height: auto;
+    margin-top: 25px;
+    text-align: center;
+    border: 2px dotted orange;
+    padding: 5px;
+    margin-right: 4%;
+}
+
+#interests{
+    width: 25%;
+    height: auto;
+    margin-top: 25px;
+    text-align: center;
+    border: 2px dotted orange;
+    padding: 5px;
+}
+
+#hobbies{
+    display: flex;
+    list-style-type: circle;
+}
+
+.footer{
+    font-size: 1em;
+    border-top: 1.5px dashed orange;
+    position: fixed;
+    bottom: 10px;
+    /* transform: translate(-50%);
+    left: 50%; */
+    width: 100%;
+}
+
+.footer-content{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#desserts{
+    display: flex;
+    flex-direction: row;
+    width: 42%;
+    border: 3px dotted orangered;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+#carving{
+    display: flex;
+    flex-direction: row;
+    width: 43%;
+    border: 3px dotted coral;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+#collection{
+    border: 3px #FAFAD2 inset;
+    padding: 5px;
+    width: 28%;
+}
+
+#volunteer{
+    display: flex;
+}
+
+#volunteer1{
+    width: 30%;
+    border: 3px dotted lightcoral;
+    padding: 5px;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-right: 10px;;
+}
+
+#volunteer2{
+    width: 30%;
+    border: 3px dotted lightcoral;
+    padding: 5px;
+    justify-content: space-evenly;
+    text-align: center;
+}

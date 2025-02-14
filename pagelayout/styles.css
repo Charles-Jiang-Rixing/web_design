@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto";
+}
+
+body {
+    background-color: #F0F8FF;
+    font-family: Georgia, serif;
+    margin-left: 20px;
+}
+
+a:link, a:visited {
+    color: black;
+
+}
+a:active{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: orange;
+}
+
+.footer{
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1.5px dashed orange;
+}

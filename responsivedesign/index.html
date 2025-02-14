@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles - Reponsive Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      #container2 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #container1 {
+        width: 90%;
+        margin: auto;
+      }
+
+      #child1, #child2 {
+        border: 1.5px orange dashed;
+        padding: 4%;
+        font-size: 1.1em;
+        margin-bottom: 3%;
+        text-align: center;
+      }
+
+      #child3 {
+        width: 80%;
+        align-self: center;
+      }
+      
+      @media (min-width: 1024px) {
+        #container2{
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 50% 50%;
+          width: 80%;
+          gap: 4%;
+          grid-template-areas: 
+            "a b"
+            "a c";
+        }
+
+        #container1 {
+          width: 92%;
+          margin: auto;
+        }
+
+        #child1 { grid-area: a; padding: 8%; font-size: 1.1em; margin-bottom: 0;}
+        #child2 { grid-area: b; font-size: 1.1em; padding: 3%;}
+        #child3 { grid-area: c; width: 80%; place-self: center;}
+        #child1 p{font-size: 1.1em;}
+      }
+    </style>
+  </head>
+
+  <body id="container1">
+    <header>
+      <h1>Everything about Olive Oil</h1>
+    </header>
+
+    <main id="container2">
+      <div id="child1">
+        <article>
+          <h2>Introduction</h2>
+            <p>Nowadays, chronic diseases, including obesity, diabetes, cardiovascular disease, and cancer, are becoming increasingly prevalent. As people pay more attention to their health, preventive measures are taken. Daily diet now gains growing interest from the general public for its potential to prevent and improve these diseases. As many believe, “Food is medicine.” </p>
+            <p>Olive oil, a major component in Mediterranean diets, is one of the most recommended ingredients for daily consumption because of its various nutrients and health benefits. </p>
+        </article>
+      </div>
+
+      <div id="child2">
+        <nav>
+          <h2>Agenda</h2>
+            <div id="list">
+              <p><a href="categorization.html">Categorization</a></p>
+              <p><a href="benefits.html">Health Benefits</a></p>
+              <p><a href="use.html">Use Beyond Cooking</a></p>
+            </div>
+        </nav>
+      </div>
+
+      <img src="images/oil-480.jpg" alt="picture of olive oil" srcset="images/oil-960.jpg 960w, images/oil-1440.jpg 1440w;" id="child3" sizes="(min-width: 1024px) 1200px">
+    </main>
+  </body>
+</html>
