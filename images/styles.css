@@ -1,0 +1,17 @@
+#container{
+    width: 25%;
+    margin: auto;
+    height: auto;
+    border: 2px dashed orange;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: aliceblue;
+}
+
+p{
+    font-family: Georgia, sans-serif, Arial;
+    text-align: center;
+    font-size: 1.1em;
+}

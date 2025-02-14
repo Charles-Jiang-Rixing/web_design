@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100"> 
+        <defs>
+            <linearGradient id="gradient1">
+                <stop offset="0%" stop-color="cyan" />
+                <stop offset="100%" stop-color="yellow" />
+            </linearGradient>
+    
+            <linearGradient id="gradient2">
+                <stop offset="0%" stop-color="magenta" />
+                <stop offset="100%" stop-color="cyan" />
+            </linearGradient>
+    
+            <linearGradient id="gradient3">
+                <stop offset="0%" stop-color="yellow" />
+                <stop offset="100%" stop-color="orange" />
+            </linearGradient>
+    
+            <style>
+                circle:active, polygon:active{
+                    opacity: 1;
+                    stroke: black;
+                    stroke-width: 0.3;
+                }
+                
+                circle:hover, polygon:hover{
+                    opacity: 1;  
+                }
+            </style>
+        </defs>
+        
+        <a href="https://i6.cims.nyu.edu/~rj2588/">
+            <circle cx="100" cy="50" r="50" fill="url(#gradient1)" stroke="black" stroke-width="0.3" opacity="0.9">
+            <title>This is my self-designed logo</title>
+            </circle>
+        </a>
+    
+        <polygon points="56.69872981077807,25 100,100 143.3012701892219,25" fill="url(#gradient2)" opacity="0.9">
+        </polygon>
+    
+        <polygon points="56.69872981077807,75 100,0 143.3012701892219,75" fill="url(#gradient2)" opacity="0.9">
+        </polygon>
+    
+        <a href="https://i6.cims.nyu.edu/~rj2588/me/index.html">
+            <circle cx="100" cy="50" r="25" fill="url(#gradient3)" opacity="0.9"> 
+            </circle>
+        </a>
+    
+        <line x1="100" y1="25" x2="92.78312163512968" y2="37.5" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="92.78312163512968" y1="37.5" x2="78.34936490538903" y2="37.5" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="78.34936490538903" y1="37.5" x2="85.56624327025935" y2="50" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="85.56624327025935" y1="50" x2="78.34936490538903" y2="62.5" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="78.34936490538903" y1="62.5" x2="92.78312163512968" y2="62.5" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="92.78312163512968" y1="62.5" x2="100" y2="75" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="100" y1="75" x2="107.2168783648703" y2="62.5" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="107.2168783648703" y1="62.5" x2="121.650635094611" y2="62.5" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="121.650635094611" y1="62.5" x2="114.4337567297406" y2="50" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="114.4337567297406" y1="50" x2="121.65063509461097" y2="37.5" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="121.65063509461097" y1="37.5" x2="107.2168783648703" y2="37.5" stroke="darkorange" stroke-width="0.7"></line>
+        <line x1="107.2168783648703" y1="37.5" x2="100" y2="25" stroke="darkorange" stroke-width="0.7"></line>
+    
+        <text x="100" y="50" font-size="0.5em" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica">JRX</text>
+      </svg>

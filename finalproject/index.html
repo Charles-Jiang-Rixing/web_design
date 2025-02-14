@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles - Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      article {
+        width: 85%;
+        margin: auto;
+        /* margin-top: 20px; */
+        text-align: center;
+        border: 1.5px pink dashed;
+        border-radius: 10px;
+        padding: 0px 25px 0px 25px;
+      }
+
+      img {
+        /* margin-top: 25px; */
+        width: 85%;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #paragraph2 {
+        margin-top: 20px;
+      }
+
+      #list {
+        width: 85%;
+        text-align: center;
+        border: 1.5px pink dashed;
+        border-radius: 10px;
+        /* margin-top: 20px; */
+        /* padding-bottom: 10px; */
+      }
+
+      @media (min-width: 1024px) {
+        #container {
+          width: 85%;
+          place-self: center;
+          display: grid;
+          grid-template-areas: 
+          "a b"
+          "a c";
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          place-items: center;
+        }
+
+        .area1 {grid-area: a;}
+        .area2 {grid-area: b;}
+        #area4 {grid-area: c;}
+
+        #list {
+          /* height: 220px; */
+          height: 100%;
+        }
+
+        article {
+          /* padding: 0px 30px 20px 30px; */
+          height: 100%;
+        }
+        
+        article p{
+          width: 90%;
+          margin: auto;
+        }
+
+        img{
+          width: 70%; 
+          height: auto;
+          margin-top: 15px;
+          /* margin-left: 5px; */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <h1>My Volunteer Experiences</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <article class="area1">
+                <h2>Introduction</h2>
+                <p>I love engaging in volunteering programs in my free time. They are of crucial importance to both the individual and society as a whole. Personally speaking, volunteer experiences have helped me develop empathy and compassion, gain a strong sense of satisfaction and achievement, and make a positive impact on others’ lives. Sometimes, even a small kind act can make a difference. At large, more and more people are encouraged to join, society’s pressing needs are being resolved, and the world is becoming a better place that benefits everyone.</p>
+                <p id="paragraph2">This website is designed primarily to showcase my past volunteering experiences. On each page, a different program will be presented, along with a brief introduction, my contributions, and some images. Interactive buttons will also be included to provide links or more information.</p>
+            </article>
+
+            <nav id="list" class="area2">
+                <h2>Catalog</h2>
+                <p><a href="teaching.html">Teaching</a></p>
+                <p><a href="bazaar.html">Charity Bazaars</a></p>
+                <p><a href="village.html">Village Research</a></p>
+                <p><a href="tibet.html">Tibet Research</a></p>
+            </nav>
+
+            <!-- <div id = "area4"> -->
+              <img src="images/volunteer-480.jpg" alt="cartoon image of volunteer programs" width="300" height="auto" srcset="images/volunteer-960.jpg 960w, images/volunteer-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+        
+            <!-- </div> -->
+        </div>
+        <svg viewBox="0 0 100 100" width="55" height="55" class="navbar">
+            <defs>
+                <linearGradient id="gradient1">
+                    <stop offset="0%" stop-color="cyan" />
+                    <stop offset="100%" stop-color="yellow" />
+                </linearGradient>
+            
+                <linearGradient id="gradient2">
+                    <stop offset="0%" stop-color="magenta" />
+                    <stop offset="100%" stop-color="cyan" />
+                </linearGradient>
+            
+                <linearGradient id="gradient3">
+                    <stop offset="0%" stop-color="yellow" />
+                    <stop offset="100%" stop-color="orange" />
+                </linearGradient>
+            </defs>
+
+            <circle cx="50" cy="50" r="50" fill="url(#gradient1)" stroke="black" stroke-width="0.3" opacity="0.9"></circle>
+            <polygon points="6.69872981077807,25 50,100 93.3012701892219,25" fill="url(#gradient2)" opacity="0.9"></polygon>
+            <polygon points="6.69872981077807,75 50,0 93.3012701892219,75" fill="url(#gradient2)" opacity="0.9"></polygon>
+            <circle cx="50" cy="50" r="25" fill="url(#gradient3)" opacity="0.9"></circle>
+        </svg>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="bazaar.html">Charity Bazaars</a></li>
+                <li><a href="village.html">Village Research</a></li>
+                <li><a href="tibet.html">Tibetan Research</a></li>
+            </ul>
+            <button class="button">Collapse</button>
+        </nav>
+    
+        <button id="btn">Change color</button>
+
+        <script src="color.js"></script>
+    </main>
+  </body>
+</html>

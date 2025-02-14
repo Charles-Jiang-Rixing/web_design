@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuanshui Village Field Research</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        article{
+            width: 85%;
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+            border: 1.5px pink dashed;
+            border-radius: 10px;
+            padding: 10px 25px 20px 25px;
+        }
+
+        img{
+            width: 85%;
+        }
+
+        .section2 {
+            margin-top: 25px;
+        }
+
+        @media (min-width: 1024px) {
+            #container {
+                display: grid;
+                grid-template-areas: "a b";
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .section1 {grid-area: a;}
+            .section2 {grid-area: b; margin-top: 20px;}
+            .section1 img {margin-top: 5px; margin-bottom: 5px;}
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <h1>Village Field Research</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <article class="section1">
+                <p>Last summer vacation, I conducted a one-week field research with other classmates in Nuanshui village, Gansu Province, China. There, I interviewed several villagers about their living conditions and witnessed some environmental pollution problems.</p>
+                <img src="images/village1-480.jpg" alt="image of Nuanshui Village" width="360" height="auto" srcset="images/village1-960.jpg 960w, images/village1-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+            </article>
+
+            <article class="section2">
+                <p>Finally, I co-authored and published an <span id="link1">investigative article</span> about the local water pollution issue due to fertilizer misuse and provided some solutions. I also created an <span id="link2">online encyclopedia</span> entry for the village to gain it more public attention.</p>
+                <img src="images/village2-480.jpg" alt="image of Nuanshui Village" width="360" height="auto" srcset="images/village2-960.jpg 960w, images/village2-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+            </article>
+        </div>
+
+        <footer class="footer">
+            <p>Go back to <a href="index.html">Home Page</a></p>
+            <p>Go to next page: <a href="tibet.html">Tibet Research</a></p>
+        </footer>
+
+        <svg viewBox="0 0 100 100" width="55" height="55" class="navbar">
+            <defs>
+                <linearGradient id="gradient1">
+                    <stop offset="0%" stop-color="cyan" />
+                    <stop offset="100%" stop-color="yellow" />
+                </linearGradient>
+            
+                <linearGradient id="gradient2">
+                    <stop offset="0%" stop-color="magenta" />
+                    <stop offset="100%" stop-color="cyan" />
+                </linearGradient>
+            
+                <linearGradient id="gradient3">
+                    <stop offset="0%" stop-color="yellow" />
+                    <stop offset="100%" stop-color="orange" />
+                </linearGradient>
+            </defs>
+
+            <circle cx="50" cy="50" r="50" fill="url(#gradient1)" stroke="black" stroke-width="0.3" opacity="0.9"></circle>
+            <polygon points="6.69872981077807,25 50,100 93.3012701892219,25" fill="url(#gradient2)" opacity="0.9"></polygon>
+            <polygon points="6.69872981077807,75 50,0 93.3012701892219,75" fill="url(#gradient2)" opacity="0.9"></polygon>
+            <circle cx="50" cy="50" r="25" fill="url(#gradient3)" opacity="0.9"></circle>
+        </svg>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="bazaar.html">Charity Bazaars</a></li>
+                <li><a href="village.html">Village Research</a></li>
+                <li><a href="tibet.html">Tibetan Research</a></li>
+            </ul>
+            <button class="button">Collapse</button>
+        </nav>
+
+        <button id="btn">Access link</button>
+
+        <script src="link1.js"></script>
+    </main>
+  </body>
+</html>
