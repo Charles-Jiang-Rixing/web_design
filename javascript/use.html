@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Beyond Cooking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         #collapseMenu{
+        color: darkgrey;
+        background-color: lightblue;
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        right: 20px;
+        }
+
+        li a:link, li a:visited {
+            color: rgb(0, 85, 201);
+            text-decoration: none;
+        }
+
+        li a:hover, li a:active{
+            background-color: lightpink;
+        }
+
+        li {
+            line-height: 50px;
+            text-align: center;
+            margin-right: 30px;
+        }
+
+        #menu {
+            display: none;
+            position: fixed;
+            right: 10px;
+            top: 50px;
+            background-color: lightgray;
+            width: 200px;
+            height: 85%;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            fill: lightskyblue;
+            opacity: 0.9;
+        }
+
+        svg:hover, svg:active{
+            background-color: lightpink;
+            opacity: 1;
+        }
+
+        #button3 {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        body {
+            width: 95%;
+            margin: auto;
+        }
+
+        #paragraph {
+            border: 1.5px dotted pink;
+            padding: 3%;
+
+            text-align: center;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #child1, #child2, #child3 {
+            width: calc(100%/3);
+        }
+
+        @media (min-width: 1024px) {
+            main{
+            display: flex;
+            flex-direction: column;
+            border: 1.5px dotted pink;
+            padding: 3%;
+            width: 80%;
+            height: 60%;
+            text-align: center;
+            font-size: 1.1em;
+            }
+
+            #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            }
+
+            #paragraph {
+                border: none;
+                padding: 0;
+            }
+
+            #navbar {
+                display: none;
+            }
+
+            #menu {
+                display: block;
+            }
+
+            #collapseMenu {
+                display: none;
+            }
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <h1>Use Beyond Cooking</h1>
+    </header>
+
+    <main>
+        <p id="paragraph">Besides culinary uses, olive oil is also widely found in moisturizers, soaps, lubricants, etc. Thanks to its moisturizing property and rich antioxidant content, it makes the products more desirable, such as smoother, water-retaining, and anti-aging.</p>
+        <div id="container">
+            <div id="child1">
+                <img class="images" src="images/moisturizer-480.jpg" alt="picture of a moisturizer" width="150" height="150" srcset="images/moisturizer-960.jpg 960w, images/moisturizer-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+                <p>moisturizer</p>
+            </div>
+
+            <div id="child2"> 
+                <img class="images" src="images/soap-480.jpg" alt="picture of a soap" width="150" height="150" srcset="images/soap-960.jpg 960w, images/soap-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+                <p>soap</p>
+            </div>
+
+            <div id="child3">
+                <img class="images" src="images/lubricant-480.jpg" alt="picture of lubricant" width="150" height="150" srcset="images/lubricant-960.jpg 960w, images/lubricant-1440.jpg 1440w;" sizes="(min-width: 1024px) 1200px">
+                <p>lubricant</p>
+            </div>
+        </div>
+    </main>
+
+    <svg viewBox="0 0 100 80" width="40" height="40" id="navbar">
+        <rect x="0" y="0" width="100" height="20"></rect>
+        <rect x="0" y="30" width="100" height="20"></rect>
+        <rect x="0" y="60" width="100" height="20"></rect>
+      </svg>
+
+      <nav id="menu">
+        <ul style="list-style-type: none;">
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="categorization.html">Categorization</a></li>
+          <li><a href="benefits.html">Health Benefits</a></li>
+          <li><a href="use.html">Use</a></li>
+          <li><a href="diet.html">Diet Suggestion</a></li>
+        </ul>
+        <button id="collapseMenu">Collapse</button>
+      </nav>
+
+    <button id="button3">Change image</button>
+    <script src="image.js"></script>
+
+    <footer class="footer">
+        <p>Go back to <a href="index.html">Home Page</a></p>
+        <p>Go to next page: <a href="diet.html">Daily Diet Suggestion</a></p>
+    </footer>
+    
+  </body>
+</html>
